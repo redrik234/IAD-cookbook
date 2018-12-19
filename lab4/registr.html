@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Регистрация</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registr">
+        Регистрация
+    </button>
+
+    <div class="modal fade" id="registr" tabindex="-1" role="dialog" aria-labelledby="registr" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content rounded">
+                <div class="modal-header btn-info">
+                    <h4 class="modal-title w-100" id="registr">
+                        Регистрация
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="border border-light p-5" style="color: #757575;">
+                        <label for="firstName">Имя</label>
+                        <input type="text" id="firstName" class="form-control">
+                        <label for="lastName">Фамиилия</label>
+                        <input type="text" id="lastName" class="form-control">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" class="form-control">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" class="form-control" aria-describedby="passwordHelpBlock">
+                        <small id="passwordHelpBlock" class="form-text text-muted mb-4">
+                            Введите не менее 8 символов и хотя бы одну цифру
+                        </small>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="newsletter">
+                            <label class="form-check-label" for="newsletter">Подписаться на наши обновления</label>
+                        </div>
+                        <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>

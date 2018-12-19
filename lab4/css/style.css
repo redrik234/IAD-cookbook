@@ -1,0 +1,7 @@
+.jumbotron-bg {
+    background-image: url("../img/head.png");
+    background-repeat: no-repeat;
+}
+.jumbotron-custom {
+    padding-bottom: 200px;
+}
