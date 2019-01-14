@@ -2,7 +2,7 @@ version: "3"
 services:
     app:
         build:
-            context: .
+            context: ./Docker-app
             dockerfile: ./Dockerfile-app
         container_name: cookbook-app
         ports:
@@ -11,7 +11,7 @@ services:
             - ./pechka.com:/var/www/html
     db:
         build:
-            context: .
+            context: ./Docker-db
             dockerfile: ./Dockerfile-db
         container_name: cookbook-db
         environment:
