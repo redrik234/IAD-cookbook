@@ -1,0 +1,4 @@
+FROM mysql:5.7.16
+
+COPY ./db.sql /var/www/html/db/
+COPY init.sql /docker-entrypoint-initdb.d/

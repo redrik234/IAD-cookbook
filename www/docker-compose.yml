@@ -1,0 +1,32 @@
+version: "3"
+services:
+    app:
+        build:
+            context: .
+            dockerfile: ./Dockerfile-app
+        container_name: cookbook-app
+        ports:
+            - 80:80
+        volumes:
+            - ./pechka.com:/var/www/html
+    db:
+        build:
+            context: .
+            dockerfile: ./Dockerfile-db
+        container_name: cookbook-db
+        environment:
+            MYSQL_USERNAME: root
+            MYSQL_ROOT_PASSWORD: "root234"
+        networks:
+            - default
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links: 
+            - db:db
+        ports:
+            - 8001:80
+        container_name: cookbook-phpmyadmin
+        environment:
+            MYSQL_USER: root
+            MYSQL_PASSWORD: root
+            MYSQL_ROOT_PASSWORD: root234
