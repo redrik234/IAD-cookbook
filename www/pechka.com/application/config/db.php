@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'host'     => 'localhost',
+    'host'     => 'cookbook-db',
     'dbname'   => 'cookbook',
     'user'     => 'root',
-    'password' => 'root'
+    'password' => 'root234'
 ];
